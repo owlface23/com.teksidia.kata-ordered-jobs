@@ -41,7 +41,7 @@ b => c
 c =>
 The result should be a sequence that positions c before b, containing all three jobs abc.
 
-* Step 5 – Multiple Jobs, Multiple Dependencies
+**Step 5 – Multiple Jobs, Multiple Dependencies**
 
 Given the following job structure:
 
@@ -53,7 +53,7 @@ e => b
 f =>
 The result should be a sequence that positions f before c, c before b, b before e and a before d containing all six jobs abcdef.
 
-* Step 6 – Multiple Jobs, Self Referencing Dependency
+** Step 6 – Multiple Jobs, Self Referencing Dependency**
 
 Given the following job structure:
 
@@ -62,7 +62,7 @@ b =>
 c => c
 The result should be an error stating that jobs can’t depend on themselves.
 
-* Step 7 – Multiple Jobs, Circular Dependency Chain
+**Step 7 – Multiple Jobs, Circular Dependency Chain**
 
 Given the following job structure:
 
